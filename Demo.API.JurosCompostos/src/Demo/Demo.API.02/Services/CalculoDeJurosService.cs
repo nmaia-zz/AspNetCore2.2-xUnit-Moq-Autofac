@@ -11,7 +11,7 @@ namespace Demo.API._02.Services
         {
             var valorFinal = Decimal.ToDouble(valorInicial) * Math.Pow(Decimal.ToDouble(1 + taxadejuros), tempo);
 
-            return TruncateValue.TruncateDecimal(Convert.ToDecimal(valorFinal));
+            return TruncateValue.ToDecimal(Convert.ToDecimal(valorFinal));
         }
     }
 }
